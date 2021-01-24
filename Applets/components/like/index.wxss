@@ -1,0 +1,24 @@
+/* components/like/index.wxss */
+
+.container{
+  display: inline-flex;
+  flex-direction: row;
+  padding: 10rpx;
+}
+
+.container image{
+  width: 32rpx;
+  height: 28rpx;
+}
+
+.container text{
+  /* 苹果 苹方字体  安卓 思源字体 */
+  /* font-family: "PingFangSC-Thin"; */
+  /* font-size: 48rpx; */
+  font-size: 24rpx;
+  line-height: 24rpx;
+  color: #bbbbbb;
+  position: relative;
+  bottom: 8rpx;
+  left: 6rpx;
+}
