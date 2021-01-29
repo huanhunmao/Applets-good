@@ -1,0 +1,8 @@
+<view class="container">
+    <!-- 分别表示向左右箭头及中间的文字 -->
+    <!-- 最新一期 左箭头禁用 -->
+    <image bind:tap="onLeft" class="icon" src="{{latest ? disLeftSrc : leftSrc}}" />
+    <text class="title">{{title}}</text>
+    <!-- 最早一期 右箭头禁用 -->
+    <image bind:tap="onRight" class="icon" src="{{first ? disRightSrc : rightSrc}}" />
+</view>

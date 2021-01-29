@@ -1,4 +1,13 @@
-<v-like like="{{classicData.like_status}}" count1="{{classicData.fav_nums}}" />
-<!-- 这两个是之前在 like组件下的index.js properties设置过 -->
-<!-- like_status和fav_nums在开发文档中分别表示是否点赞/点赞次数 -->
-<!-- classicData是 pages classic --classic.js里面进行的setData数据绑定 -->
+<view class="container">
+    <view class="header">
+        <v-epsoide class="epsoide" index="{{classic.index}}" />
+        <v-like class="like" bind:like="onLike" like="{{likeStatus}}" count1="{{likeCount}}" />
+    </view>
+    <!-- 这两个是之前在 like组件下的index.js properties设置过 -->
+    <!-- like_status和fav_nums在开发文档中分别表示是否点赞/点赞次数 -->
+    <!-- classic是 pages classic --classic.js里面进行的setData数据绑定 -->
+    <v-movie hidden="{{classic.type != 100}}" img="{{classic.image}}" content="{{classic.content}}" />
+    <v-music hidden="{{classic.type != 200}}" img="{{classic.image}}" content="{{classic.content}}" />
+    <v-essay hidden="{{classic.type != 300}}" img="{{classic.image}}" content="{{classic.content}}" />
+    <v-navi bind:left="onNext" bind:right="onPrevious" title="{{classic.title}} " first="{{first}}" latest="{{latest}}" class="navi" />
+</view>

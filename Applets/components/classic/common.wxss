@@ -1,0 +1,29 @@
+/* 外层包裹 */
+.classic-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* 大图 */
+.classic-img {
+    width: 750rpx;
+    height: 500rpx;
+}
+
+/* 中间的小图电影 */
+.tag {
+    width: 46rpx;
+    height: 142rpx;
+    position: relative;
+    right: 310rpx;
+    bottom: 58rpx;
+}
+
+/* 文字 */
+.content {
+    font-size: 36rpx;
+    /* 设置固定的宽度 可实现换行 但是文字较少会导致 不居中 */
+    /* 改成 max-width 可以解决问题  */
+    max-width: 550rpx;
+}

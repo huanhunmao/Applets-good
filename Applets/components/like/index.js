@@ -42,6 +42,17 @@ Component({
         count1: count1,
         like: !like,
       });
+
+      //自定义事件 判断点赞还是取消
+      var behavior = this.properties.like ? "like" : "cancel";
+      // 需要激活 自定义事件  1参数 自定义事件名称  2参数 自定义属性  3参数看文档不能自己定义
+      this.triggerEvent(
+        "like",
+        {
+          behavior: behavior,
+        },
+        {}
+      );
     },
   },
 });

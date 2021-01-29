@@ -1,0 +1,21 @@
+.container {
+  display: inline-flex;
+  flex-direction: row;
+  /* 两端对齐间距相等 */
+  justify-content: space-between;
+  /* 保证子元素 水平居中 */
+  align-items: center;
+  width: 600rpx;
+  height: 80rpx;
+  background-color: #f7f7f7f7;
+  border-radius: 2rpx;
+}
+
+.icon {
+  height: 80rpx;
+  width: 80rpx;
+}
+
+.title {
+  font-size: 28rpx;
+}

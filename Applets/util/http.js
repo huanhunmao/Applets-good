@@ -32,7 +32,7 @@ class HTTP {
         if (code.startsWith("2")) {
           //调用params下面的success函数 并将res传递进来就可
           // 当然我们只需要data 所以传递 res.data
-          params.success(res.data);
+          params.success && params.success(res.data);
         } else {
           //服务器异常
           //需要先定义 error_code

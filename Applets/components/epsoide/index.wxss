@@ -1,0 +1,47 @@
+.container {
+    display: inline-flex;
+    height: 60rpx;
+    /* flex-direction: row; 默认就是行排列 */
+}
+
+.index-container {
+    display: flex;
+    /* 保持前三个元素 下边线对齐 很关键  */
+    align-items: baseline;
+    /* flex-direction: row; */
+}
+
+.plain {
+    font-size: 32rpx;
+}
+
+.index {
+    /* 常用文字居中方式 */
+    font-size: 60rpx;
+    line-height: 60rpx;
+    font-weight: 800;
+    margin-right: 14rpx;
+}
+
+.line {
+    /* 设置一个高度 设置一个左边框 得到竖线 ｜  */
+    height: 44rpx;
+    border-left: 1px solid black;
+    margin-right: 14rpx;
+}
+
+.data-container {
+    display: flex;
+    /* 列排 */
+    flex-direction: column;
+    margin-top: 5rpx
+}
+
+.month {
+    font-size: 24rpx;
+    line-height: 24rpx;
+}
+
+.year {
+    font-size: 20rpx;
+}
